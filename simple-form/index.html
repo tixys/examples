@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+    This is a simple demo search form for integrating Tixys shops into
+    a client website. When using this, make sure to set the correct
+    `shopUrl` below.
+
+    Feel free to modify the code in this example to meet your needs. We are
+    using jQuery and Bootstrap here, but this is completely optional.
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript">
+        tx = { shopUrl : "https://demo.tixys.com/" };
+    </script>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="form.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Tixys search form demo</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tixys search form demo</h1>
+        <form class="tx" action="" method="post">
+            <table>
+                <tr class="from">
+                    <th>From:</th>
+                    <td>
+                        <select class="form-control" disabled>
+                            <option class="placeholder" disabled selected hidden value="0">– Please select –</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="to">
+                    <th>To:</th>
+                    <td>
+                        <select class="form-control" disabled>
+                            <option class="placeholder" disabled selected hidden value="0">– Please select –</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="date">
+                    <th>Date:</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Please note: You will be forwarded to our ticket shop where you can select your trip and buy a ticket.</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><button type="submit" class="btn btn-primary">Search</button></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+</body>
+
+</html>
