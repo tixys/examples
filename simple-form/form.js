@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var apiUrl = tx.shopUrl + "api/app.v1/",
+    var apiUrl = tx.shopUrl + "api.v1/app/",
         form = $(".tx"),
         fromField = form.find(".from select"),
         toField = form.find(".to select"),
